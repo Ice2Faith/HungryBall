@@ -67,6 +67,7 @@ int main(int argc, char * argv[])
 			if (GetAsyncKeyState(VK_ESCAPE) & 0x8000)
 				break;
 		}
+		free(otherBall);
 		outtextxy(WindowX *1/ 3, WindowY * 4 / 5, "Press Any Key Continue,ESC exit");
 		_getch();
 		if (GetAsyncKeyState(VK_ESCAPE) & 0x8000)
